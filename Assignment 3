@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+    int n;
+    string str;
+    cout<<"Enter the line :";
+    cin>>str;
+    n=str.length();
+    int p = n%2;
+    if(p==0)
+    {
+       str=string(str.rbegin(),str.rend());
+       cout<<str;
+    }
+    else
+    {
+        cout<<str;
+    }
+    return 0;
+}
